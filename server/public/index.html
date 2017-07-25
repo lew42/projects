@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		html { height: 100%; }
+		body, #editor { margin: 0; min-height: 100%; width: 100%;}
+	</style>
+</head>
+<body>
+	<textarea id="editor"></textarea>
+	<script>
+		var ws = window.socket = new WebSocket("ws://localhost/");
+
+		ws.addEventListener("open", function(event){
+			// ws.send("Hello server!!");
+		});
+
+		var editor = document.getElementById("editor");
+
+		editor.addEventListener("input", function(){
+			ws.send(editor.value);
+		});
+
+		ws.addEventListener("message", function(event){
+			editor.value = event.data;
+		});
+
+
+	</script>
+</body>
+</html>

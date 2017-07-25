@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; }
+
+/* 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+apply a natural box layout model to all elements, but allowing components to change */
+html {
+ 	box-sizing: border-box;
+ 	// font-family: Montserrat;
+ 	font-family: Merriweather;
+ 	// font-weight: 300;
+ 	// font-size: 0.9em;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.wires, .wires * {
+	border: 1px solid black;
+	padding: 1px;
+}
+
+#docroot {
+	background: #ddd;
+	padding: 1em 1.33em 1.5em;
+}
+
+// .panels {
+// }
+
+// .container {
+// 	background: #eee;
+// 	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+
+// }
+
+// .tabs {
+// 	display: flex;
+// }
+
+// @bevel-alpha: 0.1;
+// @light-bevel: 1px solid rgba(255,255,255, 0.8);
+// @dark-bevel: 1px solid rgba(0,0,0,@bevel-alpha);
+
+// .bevel {
+// 	border-top: @light-bevel;
+// 	border-left: @light-bevel;
+// 	// border-bottom: @dark-bevel;
+// 	border-right: @dark-bevel;
+// }
+
+// .tab {
+// 	padding: 0.5em 1.33em 0.65em;
+// 	.bevel;
+// 	cursor: pointer;
+// }
+
+// .tab.active {
+// 	background: #eee;
+// }
+
+// .container {
+
+// }
