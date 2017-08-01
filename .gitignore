@@ -1,2 +1,3 @@
-node_modules
-!code/node_modules
+server/node_modules
+fresh/node_modules
+fresh2/node_modules
